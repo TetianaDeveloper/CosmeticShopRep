@@ -1,0 +1,27 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="Store.master.cs" 
+    Inherits="CosmeticShopWebApp.Pages.Store" %>
+
+<!DOCTYPE html>
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head runat="server">
+    <title>Cosmetic Store</title>
+    <link rel="stylesheet" href="/Content/Style.css" />
+</head>
+<body>
+    <form id="form1" runat="server">
+    <div>
+        <div id="header">
+             <CS:CartSummary runat="server" />
+            <div class="title">Cosmetic Store - сеть магазинов косметики</div>
+        </div>
+        <div id="categories">
+            <CS:CategoryLinks runat="server" />
+        </div>
+        <div>
+            <asp:ContentPlaceHolder ID="bodyContent" runat="server" />
+        </div>
+    </div>
+    </form>
+</body>
+</html>
